@@ -37,3 +37,4 @@ uvicorn main:app --reload
 documentation : `http://localhost:8000/docs`
 api get : `http://localhost:8000/get-distance`
 api post : `http://localhost:8000/new-distance`
+api update : `http://localhost:8000/update-distance`
