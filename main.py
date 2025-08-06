@@ -24,3 +24,10 @@ async def get_distance():
     if latest_distance is None:
         return {"message": "No distance received yet"}
     return {"distance": latest_distance}
+
+# Route pour mettre à jour manuellement la distance (PUT)
+@app.put("/update-distance")
+async def update_distance(data: DistanceData):
+    global latest_distance
+    latest_distance = data.distance
+    return {"message": "Distance updated successfully", "distance": latest_distance}

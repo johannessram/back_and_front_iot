@@ -31,3 +31,9 @@ pip install -r requirements.txt
 ```bash
 uvicorn main:app --reload
 ```
+
+### 5. API access
+
+documentation : `http://localhost:8000/docs`
+api get : `http://localhost:8000/get-distance`
+api post : `http://localhost:8000/new-distance`
